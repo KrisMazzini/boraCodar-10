@@ -6,8 +6,8 @@ import { WeeklyForecast } from '../../components/WeeklyForecast'
 export function Home() {
   return (
     <Container>
-      <WeeklyForecast />
       <AirQuality />
+      <WeeklyForecast />
     </Container>
   )
 }
