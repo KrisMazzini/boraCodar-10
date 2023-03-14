@@ -12,9 +12,7 @@ export interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  width: 27.7rem;
   min-width: 27.7rem;
-  min-height: 21.2rem;
   border-radius: 1rem;
 
   padding: ${(props) => PaddingSizes[props.padding || 'md']};
