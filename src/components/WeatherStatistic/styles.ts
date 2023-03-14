@@ -2,13 +2,16 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 14.7rem;
+  flex-grow: 1;
 
   padding: 1.2rem 1.6rem;
   border-radius: 6px;
 
   display: grid;
   grid-template-areas: 'icon type' 'icon value';
+  justify-content: left;
   align-items: center;
+  column-gap: 1.2rem;
 
   background-color: ${(props) => props.theme['purple-transparent']};
 
