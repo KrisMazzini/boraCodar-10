@@ -38,7 +38,7 @@ export function WeeklyForecast() {
   ]
 
   return (
-    <Card>
+    <Card padding="lg">
       <Container>
         {weeklyForecast.map((forecast) => {
           return <WeatherForecast {...forecast} key={forecast.day} />
