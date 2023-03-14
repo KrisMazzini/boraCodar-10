@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-import bodyBackground from '../assets/background.png'
+import bodyBackground from '../assets/body-background.png'
 
 export const GlobalStyle = createGlobalStyle`
     :root {

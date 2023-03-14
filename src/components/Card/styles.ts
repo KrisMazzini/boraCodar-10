@@ -21,4 +21,6 @@ export const Container = styled.div<ContainerProps>`
 
   background-color: ${(props) => props.theme['purple-700']};
   backdrop-filter: blur(10px);
+
+  position: relative;
 `
