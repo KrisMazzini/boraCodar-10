@@ -15,7 +15,8 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         min-height: 100vh;
-        min-width: 100vw;
+        min-width: 37.2rem;
+        overflow: auto;
 
         display: flex;
         justify-content: center;

@@ -8,7 +8,7 @@ export const Container = styled.li`
   border-radius: 6px;
 
   display: grid;
-  grid-template-areas: 'icon type' 'icon value';
+  grid-template-areas: 'type' 'value';
   justify-content: left;
   align-items: center;
   column-gap: 1.2rem;
@@ -19,6 +19,7 @@ export const Container = styled.li`
     width: 3.2rem;
     height: 3.2rem;
 
+    display: none;
     grid-area: icon;
     opacity: 0.4;
   }
@@ -47,6 +48,14 @@ export const Container = styled.li`
       font-size: 1.4rem;
       line-height: 1.7rem;
       color: ${(props) => props.theme['gray-300']};
+    }
+  }
+
+  @media (min-width: 524px) {
+    grid-template-areas: 'icon type' 'icon value';
+
+    img {
+      display: initial;
     }
   }
 `

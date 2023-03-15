@@ -2,11 +2,11 @@ import background from '../../assets/background.png'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  min-width: 48rem;
-  min-height: 48rem;
+  min-height: 100%;
 
   display: flex;
   flex-direction: column;
+  gap: 2.4rem;
 
   &::before {
     content: '';
@@ -23,11 +23,13 @@ export const Container = styled.div`
     background-position: bottom right;
     border-radius: 1rem;
   }
+
+  @media (min-width: 914px) {
+    min-width: 48rem;
+  }
 `
 
 export const TemperatureContainer = styled.div`
-  margin-top: 6rem;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,6 +58,10 @@ export const TemperatureContainer = styled.div`
       line-height: 2.9px;
       color: ${(props) => props.theme['gray-300']};
     }
+  }
+
+  @media (min-width: 914px) {
+    margin-top: 6rem;
   }
 `
 
