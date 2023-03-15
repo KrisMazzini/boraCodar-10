@@ -9,12 +9,15 @@ const PaddingSizes = {
 
 export interface ContainerProps {
   padding?: keyof typeof PaddingSizes
+  gridArea: string
 }
 
 export const Container = styled.div<ContainerProps>`
   min-width: 27.7rem;
-  border-radius: 1rem;
 
+  grid-area: ${(props) => props.gridArea};
+
+  border-radius: 1rem;
   padding: ${(props) => PaddingSizes[props.padding || 'md']};
   padding-top: ${(props) =>
     PaddingSizes[props.padding === 'xlg' ? 'xlg' : 'lg']};

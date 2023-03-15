@@ -34,7 +34,7 @@ export function AirQuality() {
   ]
 
   return (
-    <Card>
+    <Card gridArea="air">
       <Container>
         <CardHeader title="Air Quality" icon={<img src={leaf} alt="" />} />
         <Indexes>

@@ -2,6 +2,7 @@ import background from '../../assets/background.png'
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  min-width: 48rem;
   min-height: 48rem;
 
   display: flex;

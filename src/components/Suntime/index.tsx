@@ -7,7 +7,7 @@ import { CardHeader } from '../CardHeader'
 
 export function Suntime() {
   return (
-    <Card>
+    <Card gridArea="suntime">
       <Container>
         <CardHeader title="Suntime" icon={<img src={sunclock} alt="" />} />
         <img src={suntimeChartDraft} alt="" />

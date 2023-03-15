@@ -22,7 +22,7 @@ export function WeatherNow() {
   ]
 
   return (
-    <Card padding="sm">
+    <Card padding="sm" gridArea="now">
       <Container>
         <Location />
         <TemperatureContainer>

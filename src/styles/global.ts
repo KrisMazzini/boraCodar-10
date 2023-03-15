@@ -17,6 +17,10 @@ export const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         min-width: 100vw;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         font-family: 'Lato', sans-serif;
         font-size: 1.6rem;
         font-weight: 700;
