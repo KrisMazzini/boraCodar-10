@@ -1,4 +1,6 @@
 import background from '../../assets/background.png'
+import clouds from '../../assets/color-cloudy.svg'
+
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -26,6 +28,28 @@ export const Container = styled.div`
 
   @media (min-width: 914px) {
     min-width: 48rem;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+
+      top: -5.6rem;
+      left: -5.2rem;
+      width: 14.6rem;
+      height: 14.6rem;
+
+      background: url(${clouds}) no-repeat;
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    &::after {
+      left: -8.2rem;
+      width: 17.6rem;
+      height: 17.6rem;
+    }
   }
 `
 
